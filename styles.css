@@ -13,6 +13,10 @@ html {
   font-weight: 100;
 }
 
+h1 {
+  text-align: center;
+}
+
 form {
   height: 400px;
   display: flex;
