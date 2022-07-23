@@ -14,7 +14,7 @@ html {
 }
 
 form {
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
@@ -58,6 +58,15 @@ form {
 .buttonContainer {
   display: flex;
   justify-content: space-between;
+}
+
+button {
+  border-radius: 3px;
+  background-color: #226fbe;
+  color: white;
+  box-shadow: 0 3px #185592;
+  border: none;
+  padding: 10px 30px;
 }
 
 .loginFooter {
