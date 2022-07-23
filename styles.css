@@ -13,9 +13,6 @@ html {
   font-weight: 100;
 }
 
-body {
-}
-
 form {
   height: 500px;
   display: flex;
@@ -35,10 +32,27 @@ form {
   background-color: white;
   margin-bottom: 25px;
   height: 46px;
-  padding: 0 46px;
+  width: 310px;
+  max-width: 310px;
   display: flex;
-  align-content: center;
-  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  border-radius: 3px;
+}
+
+.inputContainer .icon {
+  margin: 15px;
+}
+
+.inputContainer input {
+  height: 100%;
+  border: 0;
+  padding: 0;
+  width: 83%;
+}
+
+.inputContainer input:focus {
+  outline: none;
 }
 
 .buttonContainer {

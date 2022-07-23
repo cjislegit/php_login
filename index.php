@@ -19,11 +19,11 @@
                 <i class="fa-solid fa-meteor fa-2xl"></i>
             </div>
             <div class="inputContainer">
-                <i class="fa-solid fa-user-large"></i>
+                <i class="fa-solid fa-user-large icon"></i>
                 <input type="text" placeholder="User Name">
             </div>
             <div class="inputContainer">
-                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-lock icon"></i>
                 <input type="text" placeholder="Password">
             </div>
             <div class="buttonContainer">
