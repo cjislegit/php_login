@@ -14,21 +14,21 @@
     <h1>PHP LOGIN FORM</h1>
     <div class="loginContainer">
 
-        <form action="">
+        <form action="" method="post">
             <div class="logo">
                 <i class="fa-solid fa-meteor fa-2xl"></i>
             </div>
             <div class="inputContainer">
                 <i class="fa-solid fa-user-large icon"></i>
-                <input type="text" placeholder="User Name">
+                <input type="text" placeholder="User Name" name="userName">
             </div>
             <div class="inputContainer">
                 <i class="fa-solid fa-lock icon"></i>
-                <input type="text" placeholder="Password">
+                <input type="text" placeholder="Password" name="password">
             </div>
             <div class="buttonContainer">
-                <button>Log In</button>
-                <button>Sign Up</button>
+                <button type="submit" name="log in">Log In</button>
+                <button type="submit" name="sign up">Sign Up</button>
             </div>
         </form>
     </div>
