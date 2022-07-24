@@ -30,10 +30,8 @@
                 <button>Log In</button>
                 <button>Sign Up</button>
             </div>
-
         </form>
     </div>
-    <div class="loginFooter">Made with love and coffee =]</div>
 </body>
 
 </html>
