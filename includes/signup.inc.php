@@ -8,11 +8,16 @@ if (isset($_POST['submit'])) {
     $password = $_POST['password'];
 
     //Include and instantiate signUp controller class
-    include "../classes/signupContr.classes.php";
+    include "../classes/dbh.classes.php";
     include "../classes/signup.classes.php";
+    include "../classes/signupContr.classes.php";
 
     $signUp = new SignUpContr($userName, $password);
+
     //Running err handlers and sign up
+    $signUp->signupUser();
+
     //Go back to front page
+    header("location: ../index?error=none");
 
 }
