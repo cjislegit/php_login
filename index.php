@@ -14,7 +14,7 @@
     <h1>PHP LOGIN FORM</h1>
     <div class="loginContainer">
 
-        <form action="" method="post">
+        <form action="includes/signup.inc.php" method="post">
             <div class="logo">
                 <i class="fa-solid fa-meteor fa-2xl"></i>
             </div>

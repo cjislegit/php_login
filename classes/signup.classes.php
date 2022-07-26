@@ -1,6 +1,6 @@
 <?php
 
-class SignUp extends Dbh
+class SignUp extends Database
 {
     protected function setUser($userName, $pwd)
     {

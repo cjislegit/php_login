@@ -1,5 +1,5 @@
 <?php
-class SignUpContr
+class SignUpContr extends SignUp
 {
     private $userName;
     private $password;
@@ -11,7 +11,7 @@ class SignUpContr
     }
 
     //Sign up user
-    private function signupUser()
+    public function signupUser()
     {
         if ($this->emptyInput() == false) {
             //echo "Empty input!";
