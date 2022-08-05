@@ -18,6 +18,7 @@ class Database
         try {
             //Create PDO instance
             $this->conn = new PDO("mysql:host=$this->host; dbname=$this->db", $this->username, $this->password);
+            //Turns on Erros for PDO
             $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         } catch (PDOException $error) {

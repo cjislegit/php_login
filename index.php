@@ -1,3 +1,6 @@
+<?php
+require_once "controller/Controller.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,16 +14,17 @@
 </head>
 
 <body>
+    <div><?php print_r($test)?></div>
     <h1>PHP LOGIN FORM</h1>
     <div class="loginContainer">
 
-        <form action="includes/signup.inc.php" method="post">
+        <form method="POST">
             <div class="logo">
                 <i class="fa-solid fa-meteor fa-2xl"></i>
             </div>
             <div class="inputContainer">
                 <i class="fa-solid fa-user-large icon"></i>
-                <input type="text" placeholder="User Name" name="userName">
+                <input type="text" placeholder="User Name" name="username">
             </div>
             <div class="inputContainer">
                 <i class="fa-solid fa-lock icon"></i>
