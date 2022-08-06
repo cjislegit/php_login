@@ -17,7 +17,7 @@ require_once "controller/Controller.php";
     <div>
         <?php
 foreach ($errors as $error):
-    echo $error;
+    echo "$error <br />";
 endforeach
 ;?>
     </div>

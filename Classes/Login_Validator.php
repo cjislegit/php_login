@@ -16,6 +16,7 @@ class Login_Validator
     public function validate_form()
     {
         $this->validate_username();
+        $this->validate_password();
 
         return $this->errors;
     }
@@ -31,6 +32,21 @@ class Login_Validator
         } else {
             if (!preg_match("/^[a-zA-Z0-9]{6,12}$/", $val)) {
                 $this->addError("username", "username must be 6-12 chars & alphanumberic");
+
+            }
+        }
+
+    }
+
+    private function validate_password()
+    {
+        $val = trim($this->login_data["password"]);
+
+        if (empty($val)) {
+            $this->addError("password", "password cannont be empty");
+        } else {
+            if (!preg_match("/^[a-zA-Z0-9]{6,12}$/", $val)) {
+                $this->addError("password", "password must be 6-12 chars & alphanumberic");
 
             }
         }
