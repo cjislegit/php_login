@@ -14,7 +14,13 @@ require_once "controller/Controller.php";
 </head>
 
 <body>
-    <div><?php print_r($test)?></div>
+    <div>
+        <?php
+foreach ($errors as $error):
+    echo $error;
+endforeach
+;?>
+    </div>
     <h1>PHP LOGIN FORM</h1>
     <div class="loginContainer">
 

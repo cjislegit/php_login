@@ -2,7 +2,6 @@
 // require_once "classes/Database.php";
 require_once "Classes/Login_Validator.php";
 
-$test = $_POST;
 $errors = [];
 
 //Instantiate DB & Connect
@@ -15,5 +14,4 @@ $errors = [];
 if (isset($_POST['sign_up'])) {
     $validation = new Login_Validator($_POST);
     $errors = $validation->validate_form();
-    $test = $errors;
 }
