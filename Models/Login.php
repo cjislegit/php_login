@@ -28,7 +28,7 @@ class Login
 
         //Clean Data
         $this->usernae = htmlspecialchars(strip_tags($this->username));
-        $this->password = htmlspecialchars(strip_tags($this->password));
+        $this->password = password_hash(htmlspecialchars(strip_tags($this->password)), PASSWORD_DEFAULT);
 
         //Bind Data
         $stmt->bindParam(":username", $this->username);
