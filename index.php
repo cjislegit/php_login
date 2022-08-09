@@ -30,7 +30,7 @@ endforeach
             </div>
             <div class="inputContainer">
                 <i class="fa-solid fa-user-large icon"></i>
-                <input type="text" placeholder="User Name" name="username">
+                <input type="text" placeholder="Username" name="username">
             </div>
             <div class="inputContainer">
                 <i class="fa-solid fa-lock icon"></i>

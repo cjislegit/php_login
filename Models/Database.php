@@ -14,7 +14,6 @@ class Database
     public function connect()
     {
         $this->conn = null;
-
         try {
             //Create PDO instance
             $this->conn = new PDO("mysql:host=$this->host; dbname=$this->db", $this->username, $this->password);
