@@ -26,7 +26,7 @@ class Login
         //Prepare statement
         $stmt = $this->conn->prepare($sql);
 
-        //Clean Data
+        //Clean Data and Hash PW
         $this->usernae = htmlspecialchars(strip_tags($this->username));
         $this->password = password_hash(htmlspecialchars(strip_tags($this->password)), PASSWORD_DEFAULT);
 
@@ -43,5 +43,26 @@ class Login
             printf("Error: %s. \n", $stmt->error);
             return false;
         }
+    }
+
+    //Get Single Login
+    public function get_single()
+    {
+        //Create Query
+        $sql = "SELECT * FROM $this->table WHERE users_name = :username";
+
+        //Prepare PDO
+        $stmt = $this->conn->prepare($sql);
+
+        //Bind ID
+        $stmt->bindParam(":username", $this->username);
+
+        //Excute PDO
+        $stmt->execute();
+
+        //Make Result an Array
+        $login = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        return $login;
     }
 }

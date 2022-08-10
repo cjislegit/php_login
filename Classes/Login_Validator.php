@@ -13,10 +13,11 @@ class Login_Validator
     }
 
     //Check if fields are present in data
-    public function validate_form()
+    public function validate_form($username)
     {
         $this->validate_username();
         $this->validate_password();
+        $this->check_username($username);
 
         return $this->errors;
     }
@@ -38,6 +39,7 @@ class Login_Validator
 
     }
 
+    //Validates Password
     private function validate_password()
     {
         $val = trim($this->login_data["password"]);
@@ -51,6 +53,14 @@ class Login_Validator
             }
         }
 
+    }
+
+    //Checks if Username is Taken
+    private function check_username($username)
+    {
+        if (!empty($username)) {
+            $this->addError("Used", "username is taken");
+        }
     }
 
     //Adss errors to array
