@@ -30,11 +30,11 @@ endforeach
             </div>
             <div class="inputContainer">
                 <i class="fa-solid fa-user-large icon"></i>
-                <input type="text" placeholder="Username" name="username">
+                <input type="text" placeholder="Username" name="username" required>
             </div>
             <div class="inputContainer">
                 <i class="fa-solid fa-lock icon"></i>
-                <input type="text" placeholder="Password" name="password">
+                <input type="password" placeholder="Password" name="password" required>
             </div>
             <div class="buttonContainer">
                 <button type="submit" name="log in">Log In</button>
